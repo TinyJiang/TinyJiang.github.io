@@ -1,0 +1,10 @@
+# Site settings
+title: Tiny Jiang
+email: jhjiang888@gmail.com
+description: "Tiny Jiang's blog.</br> Hangzhou,China"
+baseurl: ""
+url: "http://www.tinyjiang.com"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
