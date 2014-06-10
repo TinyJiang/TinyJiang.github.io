@@ -1,7 +1,5 @@
-This is Tiny Jiang's blog!
+Tiny Jiang's blog! 
 
+[Tiny Jiang](http://www.tinyjiang.com/)
 
-Tiny Jiang 
-
-
-hangzhou,china
+HangZhou, China
