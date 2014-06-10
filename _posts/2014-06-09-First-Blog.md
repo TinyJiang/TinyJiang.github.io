@@ -10,6 +10,6 @@ tags:
   - post:type=snippet
 ---
 
-#新的开始，暂时把Blog挂在GitHub Pages了。第一篇，就介绍如何使用GitHub Pages搭建一个博客吧。
-#Step 1
+# 新的开始，暂时把Blog挂在GitHub Pages了。第一篇，就介绍如何使用GitHub Pages搭建一个博客吧。
+# Step 1
 要使用GitHub Pages当然得先有GitHub帐号啦- -。。此处就不做介绍了。
