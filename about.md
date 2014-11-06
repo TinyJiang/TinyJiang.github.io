@@ -5,6 +5,6 @@ permalink: /about/
 ---
 This is Tiny Jiang's blog. 
 
-Build by [Jekyll](http://jekyllrb.com/), Published on [GitHub](http://www.github.com/).
+Build by [Jekyll](http://jekyllrb.com/), Published on [GitHub Pages](https://pages.github.com).
 
-You can find the source code at [jhjiangABC.github.io](https://github.com/jhjiangABC/jhjiangABC.github.io)
+You can find the source code at [TinyJiang.github.io](https://github.com/TinyJiang/TinyJiang.github.io)
