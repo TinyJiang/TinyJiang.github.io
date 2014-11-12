@@ -8,3 +8,5 @@ url: "http://www.tinyjiang.com"
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+highlighter: pygments
