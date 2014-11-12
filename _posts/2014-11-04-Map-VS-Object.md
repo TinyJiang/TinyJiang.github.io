@@ -44,13 +44,13 @@ for (i; i < 100; i++) {
 ###测试结果
 
 ####safari
-![safari](http://www.tinyjiang.com/img/2014-11-04/safari-100.png){: width="800"}
+![safari](http://tinyjiang.qiniudn.com/2014-11-04-safari-100.png){: width="800"}
 
 ####chrome
-![chrome](http://www.tinyjiang.com/img/2014-11-04/chrome-100.png){: width="800"}
+![chrome](http://tinyjiang.qiniudn.com/2014-11-04-chrome-100.png){: width="800"}
 
 ####firefox
-![firefox](http://www.tinyjiang.com/img/2014-11-04/firefox-100.png){: width="800"}
+![firefox](http://tinyjiang.qiniudn.com/2014-11-04-firefox-100.png){: width="800"}
 
 ## AFTER ROUND 1
 原本以为两者效率差距应该差不多，居然是这样的结果。推测ES6中Map实现的方式跟Object有所区别。上MDN和ECMA查了一下，结果如下
@@ -123,13 +123,13 @@ MDN中还是没有我们想要的执行效率差距的原因，倒是多了几�
 增加大小为10000
 
 ####safari
-![safari](http://www.tinyjiang.com/img/2014-11-04/safari-10000.png){: width="800"}
+![safari](http://tinyjiang.qiniudn.com/2014-11-04-safari-10000.png){: width="800"}
 
 ####chrome
-![chrome](http://www.tinyjiang.com/img/2014-11-04/chrome-10000.png){: width="800"}
+![chrome](http://tinyjiang.qiniudn.com/2014-11-04-chrome-10000.png){: width="800"}
 
 ####firefox
-![firefox](http://www.tinyjiang.com/img/2014-11-04/firefox-10000.png){: width="800"}
+![firefox](http://tinyjiang.qiniudn.com/2014-11-04-firefox-10000.png){: width="800"}
 
 ## AFTER ROUND 2
 由于循环次数过多，时间基本上都被循环占据了，但还是可以看到性能急剧下降。
