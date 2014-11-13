@@ -58,23 +58,13 @@ for (i; i < 100; i++) {
 ###MDN
 [Map - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)
 
-	Objects and maps compared
-
-	Objects are similar to Maps in that both let you set keys to values,
-    retrieve those values, delete keys, and detect whether something 
-    is stored at a key. Because of this, Objects have been used as Maps
-    historically; however, there are important differences between
-    Objects and Maps that make using a Map better.
-
-	An Object has a prototype, so there are default keys in the map. 
-    However, this can be bypassed using map = Object.create(null).
-	The keys of an Object are Strings, where they can be any value for a Map.
-	You can get the size of a Map easily while you have to manually 
-    keep track of size for an Object.
-	Use maps over objects when keys are unknown until run time, 
-    and when all keys are the same type and all values are the same type.
-
-	Use objects when there is logic that operates on individual elements.
+>Objects and maps compared  
+Objects are similar to Maps in that both let you set keys to values,retrieve those values, delete keys, and detect whether something is stored at a key. Because of this, Objects have been used as Maps historically; however, there are important differences between Objects and Maps that make using a Map better.  
+-   An Object has a prototype, so there are default keys in the map. However, this can be bypassed using map = Object.create(null).  
+-   The keys of an Object are Strings, where they can be any value for a Map.  
+-   You can get the size of a Map easily while you have to manually keep track of size for an Object.  
+-   Use maps over objects when keys are unknown until run time, and when all keys are the same type and all values are the same type.  
+-   Use objects when there is logic that operates on individual elements.
 	
 
 这上面提了几点,总结一下
@@ -93,27 +83,22 @@ MDN中还是没有我们想要的执行效率差距的原因，倒是多了几�
 
 ### ECMA-262（Draft October 14, 2014）
 
-	23.1.3.9 Map.prototype.set ( key , value )
-
-	The following steps are taken:
-
-	.....
-	Repeat for each Record {[[key]], [[value]]} p that is an element of entries,
-	If p.[[key]] is not empty and SameValueZero(p.[[key]], key) is true, then
-	Set p.[[value]] to value.
-	Return M.
-	.....
+>23.1.3.9 Map.prototype.set ( key , value )  
+The following steps are taken:  
+.....  
+Repeat for each Record {[[key]], [[value]]} p that is an element of entries,  
+If p.[[key]] is not empty and SameValueZero(p.[[key]], key) is true,   
+then Set p.[[value]] to value.  
+Return M.  
+.....
 	
-	
-	23.1.3.6 Map.prototype.get ( key )
-
-	The following steps are taken:
-
-	.....
-	Repeat for each Record {[[key]], [[value]]} p that is an element of entries,
-	If p.[[key]] is not empty and SameValueZero(p.[[key]], key) is true, 
-    then return p.[[value]].
-	.....
+>23.1.3.6 Map.prototype.get ( key )  
+The following steps are taken:  
+.....  
+Repeat for each Record {[[key]], [[value]]} p that is an element of entries,  
+If p.[[key]] is not empty and SameValueZero(p.[[key]], key) is true,   
+then return p.[[value]].  
+.....
 
 可见Map的set和get方法当中有明显的循环逻辑(不知道为什么要这样规定)，这导致了Map的效率比原始Object的效率低了不止一个数量级
 为了验证Map中确实做了循环，我们增大Map中容量试试
